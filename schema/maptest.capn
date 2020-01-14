@@ -1,0 +1,21 @@
+@0xf1ef809e180c949e;
+
+struct Map(Value) {
+  entries @0 :List(Entry);
+  struct Entry {
+    key @0 :UInt32;
+    value @1 :Value;
+  }
+}
+
+struct Hits {
+  byLayer @0 :Map(Hit);
+struct Hit{
+  x @0 : Float64;
+  y @1 : Float64;
+  z @2 : Float64;
+}
+}
+
+
+
